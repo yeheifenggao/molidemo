@@ -1,0 +1,13 @@
+.el-dialog{
+    /* background:transparent !important; */
+    /* background-color: #124c96; */
+    background: url(../assets/beijing.jpg);
+    color: #fff;
+    border:3px solid #104994
+}
+.el-form-item__label{
+    color: #fff;
+}
+.el-dialog__title{
+    color: #fff;
+}  

@@ -1,0 +1,14 @@
+
+.el-table  { 
+    background-color: transparent !important;
+}
+.el-table th {
+    background-color: transparent !important;
+    border-bottom: 1px solid #5078fc;
+    color: #fefefe;
+  }
+ 
+.el-table tr {
+    background-color: transparent !important;
+    color: #fefefe;
+  }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Slamvan
+* source:	https://sketchfab.com/3d-models/slamvan-b5260f73c00d467096fd5a1a7205e35d
+* author:	Maicon D. Curriel (https://sketchfab.com/maiconcurriel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Slamvan" (https://sketchfab.com/3d-models/slamvan-b5260f73c00d467096fd5a1a7205e35d) by Maicon D. Curriel (https://sketchfab.com/maiconcurriel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
