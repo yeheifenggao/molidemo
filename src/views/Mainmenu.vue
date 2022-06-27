@@ -23,7 +23,7 @@
                   @node-click="handleNodeClick"
                   ref="treeRef"/>
               </div> 
-               <!--左侧导航栏底部按钮  -->
+               <!--左侧导航栏底部按钮  --> 
                <div class="left_aside_bottom">
                  <el-row class="mb-4">
                    <Addmodul @get-child-data="getChildData"></Addmodul>
