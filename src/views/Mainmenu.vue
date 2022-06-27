@@ -18,6 +18,7 @@
                  <el-tree 
                   :data="testData.data"
                   :props="defaultProps"
+                  highlight-current
                   node-key="id"
                   @node-click="handleNodeClick"
                   ref="treeRef"/>

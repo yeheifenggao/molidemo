@@ -74,7 +74,7 @@ export default {
         // initLoader();
         // deletemodel()
         initLight();
-        initDragControls();
+        // initDragControls();
         initControls();
         animate();
         resize();
@@ -93,8 +93,13 @@ export default {
         const fov = 25
         camera = new THREE.PerspectiveCamera( fov, width / height, 0.1, 1000 );
         camera.position.z = -5;
+        // camera.position.z = -100;
         camera.position.x = 0;//相机的位置
         camera.position.y = 2;
+        // camera.position.y = 100;
+        //创建相机辅助对象
+        const helper = new THREE.CameraHelper( camera );
+        scene.add( helper );
         camera.lookAt({
                     x : 0,
                     y : 0,
@@ -111,18 +116,20 @@ export default {
     }
     //光源
     const initLight = () => {
+        //点光
         pointLight = new THREE.PointLight(0xffffff);
         pointLight.position.set(20, 100, -40); //点光源位置
-        const pointLight1 = new THREE.PointLight(0xffffff);
-        pointLight1.position.set(-20, 100, 40); //点光源位置
-        const pointLight2 = new THREE.PointLight(0xffffff);
-        pointLight2.position.set(0, -100, 0); //点光源位置
-        scene.add(pointLight); //点光源添加到场景中
-        scene.add(pointLight1); //点光源1添加到场景中
-        scene.add(pointLight2); //点光源2添加到场景中
-    }
-    //拖拽
-    const initDragControls = () => {
+        //环境光，，环境光会均匀的照亮场景中的所有物体
+        const pointLight1 = new THREE.AmbientLight(0xffffff);
+        // pointLight1.position.set(-20, 100, 40); //点光源位置
+        //平行光，太阳光
+        const pointLight2 = new THREE.DirectionalLight( 0xffffff, 0.9 );
+        //半球光/天空色/地面色 /强度，，光源直接放置于场景之上，光照颜色从天空光线颜色渐变到地面光线颜色。
+        const light = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1 );
+        // scene.add(pointLight); //点光源添加到场景中
+        // scene.add(pointLight1); //点光源1添加到场景中
+        // scene.add(pointLight2); //点光源1添加到场景中
+        scene.add(light); //点光源1添加到场景中
         
            
     }
